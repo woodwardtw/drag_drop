@@ -10,33 +10,34 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-    	<ul>
-		  <li id="draggable" class="ui-state-highlight">Drag me down</li>
-		</ul>
 		 
-		<ul id="sortable">
-		  <li class="ui-state-default">Item 1</li>
-		  <li class="ui-state-default">Item 2</li>
-		  <li class="ui-state-default">Item 3</li>
-		  <li class="ui-state-default">Item 4</li>
-		  <li class="ui-state-default">Item 5</li>
-		</ul>
- 
+		<div class="parent">
+    <label for="hy">Copying stuff from only one of the containers and sorting on the other one? No problem!</label>
+    <div class="wrapper">
+      <div id="left-copy-1tomany" class="container">
+        <div>When elements are copyable, they can't be sorted in their origin container</div>
+        <div>Copying prevents original elements from being dragged. A copy gets created and <em>that</em> gets dragged instead</div>
+        <div>Whenever that happens, a <code>cloned</code> event is raised</div>
+        <div>Note that the clones get destroyed if they're not dropped into another container</div>
+        <div>You'll be dragging a copy, so when they're dropped into another container you'll see the duplication.</div>
+      </div>
+      <div id="right-copy-1tomany" class="container">
+      <div class="">When elements are copyable, they can't be sorted in their origin container</div><div class="">Copying prevents original elements from being dragged. A copy gets created and <em>that</em> gets dragged instead</div><div class="">Copying prevents original elements from being dragged. A copy gets created and <em>that</em> gets dragged instead</div></div>
+    </div>
+  </div>
+		 
 
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
-        <script src="js/main.js"></script>
-
-      
+    
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js"></script>
+      	<script src="js/main.js"></script>
     </body>
 </html>
