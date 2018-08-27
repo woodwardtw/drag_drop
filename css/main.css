@@ -1,7 +1,4 @@
 .container {
-	width: 40%;
-	height: 400px;
-	display: inline-block;
 	margin: 10px;
 	border: 1px solid black;
 }
