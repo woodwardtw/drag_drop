@@ -2,3 +2,7 @@
 	margin: 10px;
 	border: 1px solid black;
 }
+
+.text-box {
+	display: inline-block;
+}
