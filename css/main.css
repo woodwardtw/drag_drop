@@ -6,3 +6,33 @@
 .text-box {
 	display: inline-block;
 }
+
+.row {
+	border: 1px solid #efefef;
+}
+
+.evidence {
+	min-height: 150px;
+	margin-bottom: 20px;	
+}
+
+.evidence textarea {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.physical {
+	background: #f0f8ff;
+}
+
+.physical textarea {
+	border: 3px solid #82bff5;
+}
+
+.customer {
+	background: #c8eac8;
+}
+
+.customer textarea {
+	border: 3px solid #2b8c2b;
+}

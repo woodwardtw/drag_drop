@@ -16,27 +16,38 @@
     </head>
     <body>
 	
-	<div class="container parent">	 
+	<div class="container-fluid parent">	 
 		<div class="row">
 			<div class="col-md-12">
-		    	<label for="hy">Copying stuff from only one of the containers and sorting on the other one? No problem!</label>
-		     	 	<div id="left-copy-1tomany" class="container">
-		     	 		<div class="text-box"><textarea rows="4" cols="50">words</textarea></div>
-		        		<div>When elements are copyable, they can't be sorted in their origin container</div>
-		        		<div>Copying prevents original elements from being dragged. A copy gets created and <em>that</em> gets dragged instead</div>
-		       			<div>Whenever that happens, a <code>cloned</code> event is raised</div>
-		        		<div>Note that the clones get destroyed if they're not dropped into another container</div>
-		        		<div>You'll be dragging a copy, so when they're dropped into another container you'll see the duplication.</div>
+		    	<label for="hy">Drag to the destination below</label>
+		     	 	<div id="left-copy-1tomany" class="col-md-2">
+		     	 		<div class="text-box"><textarea rows="4" cols="30">words</textarea></div>		        		
 		      		</div>
 		    </div>
-			<div class="col-md-12">
-		      	<div id="right-copy-1tomany" class="container">
-		      		put stuff here
+		</div>
+			<div class="row evidence physical">
+				<div class="col-md-1">Physical Evidence</div>
+		      	<div id="right-copy-1tomany" class="col-md-11 evidence">		      		
 		      	</div>
 		  	</div>
-		  	<div class="col-md-12">
-		      	<div id="right-copy-1tomanyb" class="container">
-		      		put stuff here
+		  	<div class="row evidence customer">
+				<div class="col-md-1">Customer Actions</div>
+		      	<div id="right-copy-1tomanyb" class="col-md-11 evidence">		      		
+		      	</div>
+		  	</div>
+		  	<div class="row evidence front">
+				<div class="col-md-1">Front Stage</div>
+		      	<div id="right-copy-1tomanyc" class="col-md-11 evidence">		      		
+		      	</div>
+		  	</div>
+		  	<div class="row evidence back">
+				<div class="col-md-1">Back Stage</div>
+		      	<div id="right-copy-1tomanyd" class="col-md-11 evidence">		      		
+		      	</div>
+		  	</div>
+		  	<div class="row evidence support">
+				<div class="col-md-1">Support Processes</div>
+		      	<div id="right-copy-1tomanye" class="col-md-11 evidence">		      		
 		      	</div>
 		  	</div>
 		 </div>
