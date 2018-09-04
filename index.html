@@ -15,7 +15,7 @@
 		<script>
 		 jQuery(document).ready(function() {
     		jQuery('#parent').connections({ to: '.child' });
-			setInterval(function() { connections.connections('update') }, 100);
+			//setInterval(function() { connections.connections('update') }, 100);
 	});
 		</script>
 
@@ -24,13 +24,12 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-<div id="parent">Parent</div>
 	<div class="container-fluid parent">	 
 		<div class="row">
 			<div class="col-md-12">
 		    	<label for="hy">Drag to the destination below</label>
 		     	 	<div id="left-copy-1tomany" class="col-md-2">
-		     	 		<div class="text-box child"><textarea rows="4" cols="30">words</textarea></div>		        		
+		     	 		<div class="text-box"><textarea rows="4" cols="30">words</textarea></div>		        		
 		      		</div>
 		    </div>
 		</div>
