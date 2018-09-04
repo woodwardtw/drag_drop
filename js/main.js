@@ -1,8 +1,11 @@
 let left = 'left-copy-1tomany';
 let right = 'right-copy-1tomany';
 let rightb = 'right-copy-1tomanyb';
+let rightc = 'right-copy-1tomanyc';
+let rightd = 'right-copy-1tomanyd';
+let righte = 'right-copy-1tomanye';
 
-dragula([document.getElementById(left), document.getElementById(right), document.getElementById(rightb)], {
+dragula([document.getElementById(left), document.getElementById(right), document.getElementById(rightb), document.getElementById(rightc), document.getElementById(rightd), document.getElementById(righte)], {
   copy: function (el, source) {
   	el.id = randomId()
     return source === document.getElementById(left)
