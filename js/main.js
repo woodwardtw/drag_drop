@@ -5,9 +5,15 @@ let rightc = 'right-copy-1tomanyc';
 let rightd = 'right-copy-1tomanyd';
 let righte = 'right-copy-1tomanye';
 
-dragula([document.getElementById(left), document.getElementById(right), document.getElementById(rightb), document.getElementById(rightc), document.getElementById(rightd), document.getElementById(righte)], {
+dragula([document.getElementById(left), 
+	document.getElementById(right), 
+	document.getElementById(rightb), 
+	document.getElementById(rightc), 
+	document.getElementById(rightd), 
+	document.getElementById(righte)], {
   copy: function (el, source) {
   	el.id = randomId()
+  	getConnectors();
     return source === document.getElementById(left)
   },
   accepts: function (el, target) {
@@ -26,3 +32,11 @@ dragula([document.getElementById(left), document.getElementById(right), document
 function randomId() {
   return 'id-' + Math.random().toString(36).substr(2, 16);
 };
+
+
+getConnectors();
+
+function getConnectors (){
+	var connectors = document.getElementsByClassName('connector');
+	console.log(connectors);
+}

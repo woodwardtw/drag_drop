@@ -5,6 +5,7 @@
 
 .text-box {
 	display: inline-block;
+	position: relative;
 }
 
 .row {
@@ -35,4 +36,21 @@
 
 .customer textarea {
 	border: 3px solid #2b8c2b;
+}
+
+.connector {
+	display: none;
+}
+
+.evidence .connector {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: red;
+	position: absolute;
+	border-radius: 50%;
+	line-height: 25px;
+	left: 50%;
+	text-align: center;
+	bottom: -4px;
 }
