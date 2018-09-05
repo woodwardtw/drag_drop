@@ -39,4 +39,15 @@ getConnectors();
 function getConnectors (){
 	var connectors = document.getElementsByClassName('connector');
 	console.log(connectors);
+	connectors = Array.from(connectors);
+	connectors.forEach(function(element) {
+		console.log(element);
+		element.addEventListener('click', foo);
+	})
+
+	//.addEventListener("click", modifyText, false);
+}
+
+function foo(){
+	console.log('foo');
 }
