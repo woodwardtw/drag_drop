@@ -42,12 +42,14 @@ function getConnectors (){
 	connectors = Array.from(connectors);
 	connectors.forEach(function(element) {
 		console.log(element);
-		element.addEventListener('click', foo);
+		element.addEventListener('click', getId);
 	})
 
 	//.addEventListener("click", modifyText, false);
 }
 
-function foo(){
-	console.log('foo');
+function getId(e){
+
+	var id = e.target.parentNode.id;
+	console.log(id);
 }
