@@ -53,7 +53,18 @@ function getId(e){
 function makeLines(ids){
 	console.log(ids[0]);
 	console.log(ids[1]);
+	getLocation(ids[0]);
+	getLocation(ids[1]);
 }
+
+function getLocation(id){
+	theBox = document.getElementById(id);
+	theBox = theBox.getBoundingClientRect();
+	var top = theBox.top;
+	var left = theBox.left;
+	console.log(top + ' ' + left);
+}
+
 //from http://www.frontcoded.com/javascript-create-unique-ids.html
 /**
    * Creates a string that can be used for dynamic id attributes
