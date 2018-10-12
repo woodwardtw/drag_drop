@@ -65,6 +65,16 @@ function getLocation(id){
 	console.log(top + ' ' + left);
 }
 
+function makeLine(xOne,yOne,xTwo,yTwo){
+	var main = document.getElementById('main');
+	main.outterHTML += ''
+}
+
+//<svg width="500" height="500"><line x1="50" y1="50" x2="350" y2="350" stroke="black"/></svg>
+// var newSvg = document.getElementById('myDiv');
+// newSvg.outerHTML += '<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;z-index:10;margin:0;padding:0;top:0em;left:0.5em" onclick="go()" width="100" height="100"><circle cx="40" cy="40" r="40" stroke="red" stroke-width="4" fill="blue" /></svg>';
+
+
 //from http://www.frontcoded.com/javascript-create-unique-ids.html
 /**
    * Creates a string that can be used for dynamic id attributes
